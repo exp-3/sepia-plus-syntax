@@ -21,8 +21,9 @@ atom-text-editor, :host {
     color: @syntax-gutter-text-color;
 
     .line-number {
+      background-color: @syntax-gutter-line-number-background-color;
       &.cursor-line {
-        background-color: @syntax-gutter-background-color-selected;
+        background-color: @syntax-gutter-line-number-background-color-selected;
         color: @syntax-gutter-text-color-selected;
       }
 
@@ -35,7 +36,7 @@ atom-text-editor, :host {
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: @darker-sepia;
+    color: @darkest-sepia;
   }
 
   .invisible {
